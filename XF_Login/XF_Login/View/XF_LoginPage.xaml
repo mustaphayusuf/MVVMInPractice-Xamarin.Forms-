@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_Login.View.XF_LoginPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Entry x:Name="Email" Placeholder="Enter your email"
+                   HeightRequest="40" Keyboard="Email"
+                   Text="{Binding Email}"/>
+
+            <Entry x:Name="Password" Placeholder="Enter your password"
+                   HeightRequest="40" IsPassword="True"
+                   Text="{Binding Password}"/>
+
+            <Button x:Name="Loginbtn" Text="Login" HorizontalOptions="FillAndExpand"
+                    FontSize="Large"
+                    BackgroundColor="#088da5"
+                    Command="{Binding LoginCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
