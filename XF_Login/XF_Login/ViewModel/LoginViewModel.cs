@@ -14,10 +14,8 @@ namespace XF_Login.ViewModel
 
         public LoginViewModel()
         {
-            (NewCommand as Command).ChangeCanExecute();
+            
         }
-
-        public ICommand NewCommand { private set; get; }
 
         private string email;
 
